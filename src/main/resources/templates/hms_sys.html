@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <header th:replace="~{fragments/header :: header}"></header>
+    <body>
+        <!-- page container -->
+        <div class="page-container">
+            
+            <!-- page header -->
+            <div class="page-header">
+                
+                <!-- page header holder -->
+                <div class="page-header-holder">
+                    
+                    <!-- page logo -->
+                    <div class="logo">
+                        <a th:href="@{/}">ThinkerHouse</a>
+                    </div>
+                    <!-- ./page logo -->
+                    
+
+                    <!-- search -->
+                    <div th:replace="~{fragments/header :: search}"></div>
+                    <!-- ./search -->
+
+                    <!-- nav mobile bars -->
+                    <div class="navigation-toggle">
+                        <div class="navigation-toggle-button"><span class="fa fa-bars"></span></div>
+                    </div>
+                    <!-- ./nav mobile bars -->
+                    
+                    <!-- navigation -->
+                    <ul th:replace="~{fragments/header :: navigation}"></ul>
+                    <!-- ./navigation -->                           
+
+                    
+                </div>
+                <!-- ./page header holder -->
+                
+            </div>
+            <!-- ./page header -->
+            
+            <!-- page content -->
+            <div class="page-content">
+                
+                <!-- page content wrapper -->
+                <div class="page-content-wrap bg-light">
+                    <!-- page content holder -->
+                    <div class="page-content-holder no-padding">
+                        <!-- page title -->
+                        <div class="page-title">                            
+                            <h1>Hospital Management System</h1>
+                            <!-- breadcrumbs -->
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active">Hospital Management System</li>
+                            </ul>               
+                            <!-- ./breadcrumbs -->
+                        </div>
+                        <!-- ./page title -->
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+                
+                               
+                <!-- page content wrapper -->
+                <div class="page-content-wrap">                    
+                    <!-- page content holder -->
+                    <div class="page-content-holder padding-v-30">
+
+                        <div class="row">                        
+                            <div class="col-md-9">
+                        <div class="blog-content">
+                            <img src="assets/nature.jpg" class="img-responsive"/>
+                            <p>We offer an advanced Hospital Management System software designed to revolutionize the way healthcare institutions operate. Developed in-house, our software is tailored to meet the specific needs of hospitals, clinics, and other healthcare facilities, ensuring efficient management and improved patient care.</p>
+							
+							<h2>Key Features of Our Hospital Management System</h2>
+                        <p>Our Hospital Management System is equipped with a comprehensive set of features that streamline hospital operations, enhance patient experience, and improve overall efficiency.</p>
+                        <ul>
+                            <li><strong>Patient Registration and Management:</strong> Simplify patient admission, track medical history, and manage patient information seamlessly.</li>
+                            <li><strong>Appointment Scheduling:</strong> Efficiently manage appointments, reduce wait times, and optimize the utilization of healthcare professionals.</li>
+                            <li><strong>Electronic Medical Records (EMR):</strong> Maintain accurate and secure digital records of patient diagnoses, treatments, and medical histories.</li>
+                            <li><strong>Billing and Invoicing:</strong> Automate billing processes, generate invoices, and manage payments to ensure accurate and timely financial transactions.</li>
+                            <li><strong>Laboratory and Radiology Management:</strong> Streamline lab test orders, results reporting, and radiology imaging processes.</li>
+                            <li><strong>Inventory and Pharmacy Management:</strong> Keep track of medical supplies, manage drug inventories, and ensure the availability of essential items.</li>
+                            <li><strong>Staff Management:</strong> Efficiently manage staff schedules, track attendance, and handle payroll processing.</li>
+                            <li><strong>Reporting and Analytics:</strong> Generate detailed reports and analytics to support data-driven decision-making and improve hospital performance.</li>
+                            <li><strong>Telemedicine Integration:</strong> Enable remote consultations and virtual healthcare services, expanding access to medical care.</li>
+                        </ul>
+
+                        <h2>Benefits of Our Hospital Management System</h2>
+                        <p>Our Hospital Management System is designed to deliver significant benefits to healthcare institutions, enhancing operational efficiency and patient satisfaction.</p>
+                        <ul>
+                            <li><strong>Improved Patient Care:</strong> Streamline processes and ensure accurate patient information, leading to better diagnosis and treatment outcomes.</li>
+                            <li><strong>Operational Efficiency:</strong> Automate routine tasks, reduce administrative workload, and improve workflow efficiency across departments.</li>
+                            <li><strong>Enhanced Data Security:</strong> Protect sensitive patient information with robust security features and compliance with healthcare regulations.</li>
+                            <li><strong>Accurate Billing and Financial Management:</strong> Minimize errors in billing, reduce revenue leakage, and ensure timely payments.</li>
+                            <li><strong>Better Resource Management:</strong> Optimize the use of hospital resources, from staff to medical supplies, ensuring readiness and availability.</li>
+                            <li><strong>Informed Decision-Making:</strong> Leverage comprehensive data and analytics to make informed decisions and improve hospital operations.</li>
+                            <li><strong>Patient Satisfaction:</strong> Enhance patient experience with efficient appointment scheduling, reduced wait times, and accessible medical records.</li>
+                        </ul>
+
+                        <h2>Why Choose Our Hospital Management System?</h2>
+                        <p>At [Your Company Name], we are committed to providing innovative software solutions that cater to the unique needs of healthcare facilities. Our Hospital Management System is developed with a deep understanding of the healthcare industry, offering customized features and exceptional support. With a user-friendly interface and comprehensive functionality, our software is designed to make hospital management simpler and more effective.</p>
+
+                        <h2>Contact Us</h2>
+                        <p><a th:href="@{/contact}">Contact us</a> today to learn more about our Hospital Management System and how it can transform your healthcare operations. Let us help you deliver exceptional patient care and achieve operational excellence.</p>
+                    </div>
+                </div>
+
+                            <div th:replace="~{fragments/header::otherlink}">                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+                                
+            </div>
+            <!-- ./page content -->
+            
+            <!-- page footer -->
+            <div th:replace="~{fragments/footer::footer}"></div>
+            <!-- ./page footer -->
+            
+        </div>        
+        <!-- ./page container -->
+        
+         <!-- page scripts -->
+        <div th:replace="~{fragments/footer::footerscript}"></div>             
+        <!-- ./page scripts -->
+    </body>
+</html>
+
+
+
+
+
+

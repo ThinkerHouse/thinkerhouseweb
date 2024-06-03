@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<header th:fragment="header">
+    <!-- META SECTION -->
+    <title>ThinkerHouse</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- END META SECTION -->
+    
+    <link rel="stylesheet" type="text/css" th:href="@{css/revolution-slider/extralayers.css}" media="screen" />
+    <link rel="stylesheet" type="text/css" th:href="@{css/revolution-slider/settings.css}" media="screen" />
+    <link rel="icon" th:href="@{/img/favicon.ico}" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" th:href="@{css/styles.css}" media="screen" />                  
+</header>
+<div th:fragment="search" class="search">
+    <div class="search-button"><span class="fa fa-search"></span></div>
+    <div class="search-container animated fadeInDown">
+        <form th:action="@{/search}" method="post">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search..."/>
+                <div class="input-group-btn">
+                    <button class="btn btn-primary"><span class="fa fa-search"></span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+ <ul th:fragment="navigation" class="navigation">
+     <li><a th:href="@{/}">Home</a></li>
+     <li><a href="#">Services</a>
+         <ul>
+             <li><a th:href="@{/soft_dev}">Software Development</a></li>
+             <li><a th:href="@{/mobi_dev}">Mobile Application Development</a></li>
+             <li><a th:href="@{/security}">Safety & Security Systems</a></li>
+             <li><a th:href="@{/hrm_sys}">HRM Systems</a></li>
+             <li><a th:href="@{/hms_sys}">Hospital Management Systems</a></li>
+         </ul>
+     </li>
+     <li>
+         <a th:href="@{/career}">Career</a>
+     </li>
+     <li>
+         <a th:href="@{/aboutus}">About Us</a>
+     </li>
+     <li>
+         <a th:href="@{/contact}">Contact Us</a>
+     </li>
+ </ul>
+<div th:fragment="otherlink" class="col-md-3">
+                                
+                                <div class="text-column this-animate" data-animate="fadeInRight">                                    
+                                    <h4>Others Services</h4>
+                                    <div class="list-links">                                        
+				                        <a th:href="@{/mobi_dev}">Mobile App Development</a>
+				                        <a th:href="@{/security}">Safety & Security Systems</a>
+				                        <a th:href="@{hrm_sys}">HR Management System</a>
+				                        <a th:href="@{hms_sys}">Hospital Management System</a>                                                                                                                               
+                                    </div>
+                                </div>                                
+                            </div>
+<head th:fragment="adminheader">        
+        <!-- META SECTION -->
+        <title>ThinkerHouse Admins</title>           
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" th:href="@{/img/favicon.ico}" type="image/x-icon" />
+        <!-- END META SECTION -->
+        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" th:href="@{/css/theme-default.css}"/>
+        <!-- EOF CSS INCLUDE -->                                    
+    </head>
+
+</html>

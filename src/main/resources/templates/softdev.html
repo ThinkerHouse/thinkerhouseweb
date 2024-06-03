@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <header th:replace="~{fragments/header :: header}"></header>
+        <body>
+        <!-- page container -->
+        <div class="page-container">
+            
+            <!-- page header -->
+            <div class="page-header">
+                
+                <!-- page header holder -->
+                <div class="page-header-holder">
+                    
+                    <!-- page logo -->
+                    <div class="logo">
+                        <a th:href="@{/}">ThinkerHouse</a>
+                    </div>
+                    <!-- ./page logo -->
+                    
+
+                    <!-- search -->
+                    <div th:replace="~{fragments/header :: search}"></div>
+                    <!-- ./search -->
+
+                    <!-- nav mobile bars -->
+                    <div class="navigation-toggle">
+                        <div class="navigation-toggle-button"><span class="fa fa-bars"></span></div>
+                    </div>
+                    <!-- ./nav mobile bars -->
+                    
+                    <!-- navigation -->
+                    <ul th:replace="~{fragments/header :: navigation}"></ul>
+                    <!-- ./navigation -->                               
+
+                    
+                </div>
+                <!-- ./page header holder -->
+                
+            </div>
+            <!-- ./page header -->
+            
+            <!-- page content -->
+            <div class="page-content">
+                
+                <!-- page content wrapper -->
+                <div class="page-content-wrap bg-light">
+                    <!-- page content holder -->
+                    <div class="page-content-holder no-padding">
+                        <!-- page title -->
+                        <div class="page-title">                            
+                            <h1>Software Development</h1>
+                            <!-- breadcrumbs -->
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active">Software Development</li>
+                            </ul>               
+                            <!-- ./breadcrumbs -->
+                        </div>
+                        <!-- ./page title -->
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+                
+                               
+                <!-- page content wrapper -->
+                <div class="page-content-wrap">                    
+                    <!-- page content holder -->
+                    <div class="page-content-holder padding-v-30">
+
+                        <div class="row">                        
+                            <div class="col-md-9">
+                                <div class="blog-content">
+                                    <img th:src="@{assets/softwaredev.jpg}" class="img-responsive"/>
+                                    <h2>Software Development</h2>
+                                    <p>
+                                        Since inception, we have been providing state-of-the-art Custom Software Solutions to midsize/large organizations. In developing custom software, we see our role as partners, not merely programmers. We recognize that solutions succeed not solely for technical reasons, but because end-users and internal IT staff feel ownership.                                      
+                                    </p>
+                                    <p>
+                                        Our RAD (Rapid Application Development) model development capabilities offer significantly reduced development time and savings in developing, implementing, and maintaining custom Enterprise applications.                                   
+                                    </p>
+                                    <p>
+                                        In the last decade, a number of management philosophies have been developed in an attempt to define what companies must do to compete in the new global economy. Emphasis is now placed on the use of enterprise-wide information solutions to impact the decision processes of management. Organizations have rediscovered the basics, realizing that the most effective strategy is to organize their resources in order to achieve better performance.                                   
+                                    </p>
+                                    <p>
+                                        Today's dynamic business requirements need dynamic information solutions. Generic software is not flexible enough to meet the diverse demands of each unique business.
+Considering all the aspects in mind we design cost-effective tailor-built, high-performance software for organizations that need to be made to order, high-end customized solutions.                                   
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div th:replace="~{fragments/header::otherlink}">                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+                                
+            </div>
+            <!-- ./page content -->
+            
+            <!-- page footer -->
+            <div th:replace="~{fragments/footer::footer}"></div>
+            <!-- ./page footer -->
+            
+        </div>        
+        <!-- ./page container -->
+        
+        <!-- page scripts -->
+        <div th:replace="~{fragments/footer::footerscript}"></div>             
+        <!-- ./page scripts -->
+    </body>
+</html>
+
+
+
+
+
+
