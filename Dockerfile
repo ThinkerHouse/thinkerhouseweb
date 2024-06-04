@@ -2,7 +2,7 @@
 FROM tomcat:10.1-jdk17
 
 # Update package lists and install MySQL client
-RUN apt-get update && apt-get install -y mysql-client
+RUN apt-get update && apt-get install -y mysql-client && apt-get install -y vim
 
 # Remove the default ROOT webapp
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
