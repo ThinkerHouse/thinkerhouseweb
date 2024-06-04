@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <header th:replace="~{fragments/header :: header}"></header>
+    <body>
+        <!-- page container -->
+        <div class="page-container">
+            
+            <!-- page header -->
+            <div class="page-header">
+                
+                <!-- page header holder -->
+                <div class="page-header-holder">
+                    
+                    <!-- page logo -->
+                    <div class="logo">
+                        <a th:href="@{/}">ThinkerHouse</a>
+                    </div>
+                    <!-- ./page logo -->
+                    
+
+                    <!-- search -->
+                    <div th:replace="~{fragments/header :: search}"></div>
+                    <!-- ./search -->
+
+                    <!-- nav mobile bars -->
+                    <div class="navigation-toggle">
+                        <div class="navigation-toggle-button"><span class="fa fa-bars"></span></div>
+                    </div>
+                    <!-- ./nav mobile bars -->
+                    
+                    <!-- navigation -->
+                    <ul th:replace="~{fragments/header :: navigation}"></ul>
+                    <!-- ./navigation -->                         
+
+                    
+                </div>
+                <!-- ./page header holder -->
+                
+            </div>
+            <!-- ./page header -->
+            
+            <!-- page content -->
+            <div class="page-content">
+                
+                <!-- page content wrapper -->
+                <div class="page-content-wrap bg-light">
+                    <!-- page content holder -->
+                    <div class="page-content-holder no-padding">
+                        <!-- page title -->
+                        <div class="page-title">                            
+                            <h1>Contacts Us</h1>
+                            <!-- breadcrumbs -->
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active">Contacts</li>
+                            </ul>               
+                            <!-- ./breadcrumbs -->
+                        </div>
+                        <!-- ./page title -->
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+                
+                               
+                <!-- page content wrapper -->
+                <div class="page-content-wrap">                    
+                    
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7969406884745!2d90.41252967537203!3d23.754619488614335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b90011e1a8ab%3A0x94ef461d85e634fc!2sThinkerHouse!5e0!3m2!1sbn!2sbd!4v1716471886684!5m2!1sbn!2sbd" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                <!-- ./page content wrapper -->
+                
+                <!-- page content wrapper -->
+                <div class="page-content-wrap">                    
+                    
+                    <div class="divider"><div class="box"><span class="fa fa-angle-down"></span></div></div>                    
+                    
+                    <!-- page content holder -->
+                    <div class="page-content-holder">
+                    
+                        <div class="row">
+                            <div class="col-md-7 this-animate" data-animate="fadeInLeft">
+                                
+                                <div class="text-column">
+                                    <h4>Contact Us</h4>
+                                    <div class="text-column-info">
+                                        We would love to hear from you! Whether you have questions about our services, need support, or want to discuss potential collaborations, please reach out to us. 
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                <form th:action="@{/contact}" method="post">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Name <span class="text-hightlight">*</span></label>
+                                            <input type="text" class="form-control" id="name" name="name"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>E-mail <span class="text-hightlight">*</span></label>
+                                            <input type="text" class="form-control" id="email" name="email"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Subject <span class="text-hightlight">*</span></label>
+                                            <input type="text" class="form-control" id="subject" name="subject"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Message <span class="text-hightlight">*</span></label>
+                                            <textarea class="form-control" rows="8" id="message" name="message"></textarea>
+                                        </div>
+                                        <input type="submit" class="btn btn-primary btn-lg pull-right" value="Submit Message">
+                                        <!-- <button class="btn btn-primary btn-lg pull-right">Send Message</button> -->
+                                    </div>
+                                </form>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-5 this-animate" data-animate="fadeInRight">
+                                
+                                <div class="text-column text-column-centralized">
+                                    <div class="text-column-icon">
+                                        <span class="fa fa-home"></span>
+                                    </div>                                    
+                                    <h4>Our Office</h4>
+                                    <div class="text-column-info">
+                                        <p><strong><span class="fa fa-map-marker"></span> Address: </strong> 16/3, Malibag Chowdhurypara, Dhaka 1219, Bangladesh. </p>
+                                        <p><strong><span class="fa fa-phone"></span> Phone: </strong> (880) 179-163-1664</p>
+                                        <p><strong><span class="fa fa-envelope"></span> E-mail: </strong> <a href="#">info@thinkerhouse.co</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-column text-column-centralized">
+                                    <div class="text-column-icon">
+                                        <span class="fa fa-clock-o"></span>
+                                    </div>
+                                    <h4>Bussines Hours</h4>
+                                    <div class="text-column-info">
+                                        <p><strong>Sunday &mdash; Thursday</strong>: 10:00am - 6:00pm</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+                
+            </div>
+            <!-- ./page content -->
+            
+             <!-- page footer -->
+            <div th:replace="~{fragments/footer::footer}"></div>
+            <!-- ./page footer -->
+            
+        </div>        
+        <!-- ./page container -->
+        
+        <!-- page scripts -->
+        <div th:replace="~{fragments/footer::footerscript}"></div>             
+        <!-- ./page scripts -->
+    </body>
+</html>
+
+
+
+
+
+

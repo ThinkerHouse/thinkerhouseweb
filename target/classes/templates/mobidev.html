@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+    <header th:replace="~{fragments/header :: header}"></header>
+    <body>
+        <!-- page container -->
+        <div class="page-container">
+            
+            <!-- page header -->
+            <div class="page-header">
+                
+                <!-- page header holder -->
+                <div class="page-header-holder">
+                    
+                     <!-- page logo -->
+                    <div class="logo">
+                        <a th:href="@{/}">ThinkerHouse</a>
+                    </div>
+                    <!-- ./page logo -->
+                    
+
+                    <!-- search -->
+                    <div th:replace="~{fragments/header :: search}"></div>
+                    <!-- ./search -->
+
+                    <!-- nav mobile bars -->
+                    <div class="navigation-toggle">
+                        <div class="navigation-toggle-button"><span class="fa fa-bars"></span></div>
+                    </div>
+                    <!-- ./nav mobile bars -->
+                    
+                   <!-- navigation -->
+                    <ul th:replace="~{fragments/header :: navigation}"></ul>
+                    <!-- ./navigation -->                       
+
+                    
+                </div>
+                <!-- ./page header holder -->
+                
+            </div>
+            <!-- ./page header -->
+            
+            <!-- page content -->
+            <div class="page-content">
+                
+                <!-- page content wrapper -->
+                <div class="page-content-wrap bg-light">
+                    <!-- page content holder -->
+                    <div class="page-content-holder no-padding">
+                        <!-- page title -->
+                        <div class="page-title">                            
+                            <h1>Mobile application development</h1>
+                            <!-- breadcrumbs -->
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active">Mobile Development</li>
+                            </ul>               
+                            <!-- ./breadcrumbs -->
+                        </div>
+                        <!-- ./page title -->
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+                
+                               
+                <!-- page content wrapper -->
+                <div class="page-content-wrap">                    
+                    <!-- page content holder -->
+                    <div class="page-content-holder padding-v-30">
+
+                        <div class="row">                        
+                            <div class="col-md-9">
+                                <div class="blog-content">
+                                    <img th:src="@{assets/mobileapp.jpg}" class="img-responsive"/>
+                                    <h2>Mobile application development</h2>
+                                    <p>
+                                        The growing popularity of Smartphones is packing all sorts of bells and whistles. Powerful processors, abundant memory, larger screens, and potent operating systems are enabling users to do most of the chores without using their computers and laptops. The ability to communicate by sending instant messages and e-mails, access the Internet or get directions via GPS are just some of the many features that handset owners are growing progressively more inclined to utilize. This is opening a lot of opportunities for visionaries all over the world; we can assist you to translate your idea into reality.
+                                    </p>
+                                    <p>
+                                        We create value-added applications tailored exactly to your specific business requirements for enhanced efficiency, functionality, and value addition. Thinker House is vastly experienced in developing and testing Mobile Applications.
+                                    </p>
+                                    <p>
+                                        Our team has a passion for Mobile Application development and we always follow new trends and changes in this high-tech arena. We have proficient technical teams to deliver a complete solution, from design to development.                                        
+                                    </p>
+
+                                    <h2>Mobile development services</h2>
+                                    <p>IOS (IPhone/IPad) iPhone SDK, Cocoa Touch, Xcode, Objective-C
+                                        Android Eclipse, Android SDK, Android Native Development Kit (NDK), Android DT (ADT), Java
+                                    </p>
+
+                                </div>
+
+                                        
+                                        <div class="col-md-2">                                
+                                            <div class="text-column text-column-centralized this-animate" data-animate="fadeInLeft">
+                                                <div class="text-column-icon">
+                                                    <span class="fa fa-briefcase"></span>
+                                                </div>
+                                                <h7>Software Development</h7>
+                                            </div>                                
+                                        </div>
+                                        
+                                        <div class="col-md-2">                                
+                                            <div class="text-column text-column-centralized this-animate" data-animate="fadeInUp">
+                                                <div class="text-column-icon">
+                                                    <span class="fa fa-clock-o"></span>
+                                                </div>
+                                                <h7>Software Migration & Re-engineering</h7>
+                                            </div>                                
+                                        </div>
+    
+                            </div>
+
+                            <div th:replace="~{fragments/header::otherlink}">                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- ./page content holder -->
+                </div>
+                <!-- ./page content wrapper -->
+                                
+            </div>
+            <!-- ./page content -->
+            
+            <!-- page footer -->
+            <div th:replace="~{fragments/footer::footer}"></div>
+            <!-- ./page footer -->
+            
+        </div>        
+        <!-- ./page container -->
+        
+       <!-- page scripts -->
+        <div th:replace="~{fragments/footer::footerscript}"></div>             
+        <!-- ./page scripts -->
+    </body>
+</html>
+
+
+
+
+
+
